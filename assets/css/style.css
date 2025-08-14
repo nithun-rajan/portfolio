@@ -1,0 +1,78 @@
+:root{
+  --bg:#0b0f19; --bg2:#0e1430; --card:#12182a; --text:#e8ecff; --muted:#a7b0d6; --accent:#7aa2ff;
+  --border:#26325a; --shadow:0 12px 40px rgba(8,15,40,.35);
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+
+/* NAV / HERO */
+.hero{position:relative;padding:28px 20px 80px;background:radial-gradient(1200px 500px at 10% -10%, #1a275155, transparent),linear-gradient(180deg,var(--bg2),var(--bg))}
+.nav{max-width:1100px;margin:0 auto 40px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.nav nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}
+.nav nav a:hover{color:var(--text)}
+.brand{color:var(--text);text-decoration:none;font-weight:700;font-size:18px}
+.hero-inner{max-width:1100px;margin:0 auto;text-align:center;position:relative}
+.hero h1{font-size:48px;line-height:1.1;margin:16px 0 6px}
+.subtitle{color:var(--muted);font-size:18px;margin-bottom:18px}
+.btn{display:inline-block;background:var(--accent);color:white;text-decoration:none;padding:12px 18px;border-radius:10px;font-weight:700;border:1px solid #4d78ff;box-shadow:var(--shadow);transition:.15s transform,.15s filter}
+.btn:hover{transform:translateY(-1px);filter:brightness(1.03)}
+.btn.ghost{background:transparent;color:var(--accent);border-color:var(--border);box-shadow:none}
+
+/* subtle animated shapes */
+.orbs{position:absolute;inset:0;pointer-events:none}
+.orb{position:absolute;border-radius:50%;filter:blur(25px);opacity:.4;animation:float 12s ease-in-out infinite}
+.orb-a{width:220px;height:220px;background:#6ea8ff;top:20%;left:12%}
+.orb-b{width:180px;height:180px;background:#9c7bff;top:40%;right:14%;animation-delay:1.2s}
+.orb-c{width:140px;height:140px;background:#5fe1ff;top:70%;left:24%;animation-delay:.6s}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-16px)}}
+
+/* Sections */
+.section{max-width:1100px;margin:0 auto;padding:56px 20px}
+.section-title{font-size:28px;margin:0 0 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.card{background:linear-gradient(180deg,#141b31,#0f1528);border:1px solid var(--border);border-radius:16px;padding:18px;box-shadow:var(--shadow)}
+.card h3{margin:0 0 6px}
+.link{color:var(--accent);text-decoration:none;font-weight:700}
+.link:hover{text-decoration:underline}
+.hover-lift{transition:transform .12s ease, box-shadow .12s ease}
+.hover-lift:hover{transform:translateY(-4px)}
+
+/* Timeline */
+.timeline{position:relative;margin-left:6px}
+.timeline:before{content:"";position:absolute;left:8px;top:8px;bottom:8px;width:2px;background:#2a3660;border-radius:2px}
+.t-item{position:relative;padding-left:26px;margin:18px 0}
+.t-dot{position:absolute;left:2px;top:8px;width:12px;height:12px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px #1a2448}
+.t-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px}
+.t-card h3{margin:0 0 6px}
+.t-period{color:var(--muted);margin:0 0 8px;font-size:14px}
+.t-card ul{margin:0 0 0 16px;padding:0}
+.t-card li{margin:4px 0}
+
+/* Documents */
+.docs .pdf{border:1px solid var(--border);border-radius:12px;overflow:hidden;background:#0e1430}
+.docs iframe{width:100%;height:420px;border:0;display:block}
+.doc-actions{display:flex;gap:10px;margin-top:12px}
+.btn.small{padding:9px 12px;border-radius:8px;font-weight:700}
+
+/* Contact */
+.contact-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.c-card{display:flex;flex-direction:column;gap:4px;padding:16px;background:var(--card);border:1px solid var(--border);border-radius:12px;text-decoration:none;color:var(--text)}
+.c-card span{font-weight:700}
+.c-card small{color:var(--muted)}
+
+/* Footer */
+.footer{text-align:center;color:var(--muted);padding:28px 16px}
+
+/* Reveal on load */
+.reveal{opacity:0;transform:translateY(10px);animation:reveal .7s ease forwards}
+.reveal.delay-1{animation-delay:.2s}
+.reveal.delay-2{animation-delay:.4s}
+@keyframes reveal{to{opacity:1;transform:translateY(0)}}
+
+/* Responsive */
+@media (max-width:640px){
+  .hero h1{font-size:36px}
+  .subtitle{font-size:16px}
+}
+
