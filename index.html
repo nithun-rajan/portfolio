@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body id="top">
 
   <!-- Header / Hero -->
   <header class="hero">
@@ -32,7 +32,7 @@
         <a class="btn ghost" target="_blank" href="https://github.com/nithun-rajan">GitHub</a>
       </div>
 
-      <!-- Subtle animated shapes (no heavy libs) -->
+      <!-- Subtle animated shapes -->
       <div class="orbs">
         <span class="orb orb-a"></span>
         <span class="orb orb-b"></span>
@@ -45,68 +45,110 @@
   <section id="projects" class="section">
     <h2 class="section-title">Projects</h2>
     <div class="grid">
+      <!-- Nidaan AI -->
       <article class="card hover-lift">
-        <h3>FinOptima</h3>
-        <p>AI-powered finance optimization suite: portfolio optimization, risk analytics, and stock prediction in a unified app.</p>
-        <a class="link" target="_blank" href="https://github.com/nithun-rajan/FinOptima">View on GitHub →</a>
-      </article>
-
-      <article class="card hover-lift">
-        <h3>Nidaan AI</h3>
-        <p>Offline, multilingual AI Nurse for rural healthcare with FAISS retrieval and efficient local inference.</p>
+        <h3>Nidaan AI — Offline Multilingual AI Nurse (Google Gemma 3n Impact Challenge)</h3>
+        <p>
+          Collaborated with Google’s open-source Gemma 3n developers to engineer an AI-powered rural healthcare assistant,
+          fine-tuned on a custom medical dataset using <strong>QLoRA (int8)</strong> and <strong>Unsloth AI</strong> for low-resource optimization.
+          Implemented a <strong>Hybrid RAG</strong> approach—combining <strong>ChromaDB + FAISS</strong> retrieval—to deliver highly context-aware and reliable
+          medical responses. Deployed fully offline via <strong>Ollama</strong> with multilingual (Gujarati/English) speech interface, ensuring accessibility in
+          low-connectivity regions.
+        </p>
+        <p><em>Tech Stack:</em> Python, Gemma-3n, QLoRA, Unsloth, FAISS, ChromaDB, FastAPI, Speech-to-Text, Text-to-Speech, Ollama</p>
         <a class="link" target="_blank" href="https://github.com/nithun-rajan/Nidaan-AI">View on GitHub →</a>
       </article>
 
+      <!-- EdgeRisk Analyzer -->
       <article class="card hover-lift">
-        <h3>EdgeRisk Analyzer</h3>
-        <p>ESP32-based embedded ML for real-time credit card fraud risk with OLED display and on-device scoring.</p>
+        <h3>EdgeRisk Analyzer — Real-Time Embedded Fraud Detection</h3>
+        <p>
+          Deployed <strong>TensorFlow Lite Micro</strong> quantized neural network with <strong>30+ engineered features</strong> on <strong>ESP32</strong> to detect credit-card fraud
+          with <strong>94.3% accuracy</strong> and <strong>0.06 ms inference latency</strong> on a <strong>284,807-transaction</strong> dataset. Fully operational within <strong>128 KB RAM</strong> in a constrained
+          environment with 100% offline detection and <strong>OLED + LED</strong> risk alerts.
+        </p>
+        <p><em>Tech Stack:</em> ESP32, TensorFlow Lite Micro, C++, Python, OLED UI</p>
         <a class="link" target="_blank" href="https://github.com/nithun-rajan/EdgeRisk-Analyzer">View on GitHub →</a>
       </article>
 
+      <!-- FinOptima -->
+      <article class="card hover-lift">
+        <h3>FinOptima — AI-Powered Finance Optimization Suite (Quant Finance, ML, RL Trading)</h3>
+        <p>
+          Production-grade Streamlit dashboard integrating three AI finance modules:
+          <strong>(1)</strong> Portfolio Optimization via Markowitz MPT with Sharpe-ratio maximization,
+          <strong>(2)</strong> Stock Price Forecasting using <strong>LSTM + XGBoost</strong> with <em>MAPE &lt; 5%</em> and <em>R² &gt; 0.92</em>,
+          <strong>(3)</strong> Reinforcement-Learning Trading Agent (<strong>PPO/DQN</strong>) delivering <strong>+18% annualized ROI</strong> over Buy & Hold in backtesting.
+          Features real-time market data, interactive efficient frontier, and automated backtesting.
+        </p>
+        <p><em>Tech Stack:</em> Python, Streamlit, Plotly, yFinance, TensorFlow/Keras, XGBoost, Stable-Baselines3</p>
+        <a class="link" target="_blank" href="https://github.com/nithun-rajan/FinOptima">View on GitHub →</a>
+      </article>
+
+      <!-- Gyaan Guru AI -->
       <article class="card hover-lift">
         <h3>Gyaan Guru AI</h3>
         <p>AI learning assistant with guided explanation flows and retrieval for study efficiency.</p>
         <a class="link" target="_blank" href="https://github.com/nithun-rajan/GYAN-GURU-AI">View on GitHub →</a>
       </article>
 
+      <!-- CIFAR-10 -->
       <article class="card hover-lift">
-        <h3>CIFAR-10 · ResNet-50</h3>
-        <p>Image classification pipeline with ResNet-50 and robust training/validation workflow.</p>
+        <h3>CIFAR-10 — ResNet-50</h3>
+        <p>End-to-end image classification pipeline with ResNet-50; robust training/validation and evaluation reporting.</p>
         <a class="link" target="_blank" href="https://github.com/nithun-rajan/CIFAR-10-Object-Recognition-using-ResNet-50">View on GitHub →</a>
       </article>
 
+      <!-- Breast Cancer -->
       <article class="card hover-lift">
         <h3>Breast Cancer Classification</h3>
-        <p>Deep learning classifier for diagnostic support; clean data pipeline and evaluation reports.</p>
+        <p>Deep-learning classifier with clean preprocessing and metrics tracking for diagnostic support.</p>
         <a class="link" target="_blank" href="https://github.com/nithun-rajan/Breast-Cancer-classification-with-Deep-learning-NN">View on GitHub →</a>
       </article>
     </div>
   </section>
 
-  <!-- Experience -->
+  <!-- Work Experience -->
   <section id="experience" class="section">
     <h2 class="section-title">Work Experience</h2>
     <div class="timeline">
+
+      <!-- Mytender.io -->
       <div class="t-item reveal">
         <div class="t-dot"></div>
         <div class="t-card">
-          <h3>AI/ML Intern — Hiron AI (London, UK)</h3>
-          <p class="t-period">Jun 2025 – Jul 2025</p>
+          <h3>Mytender.io — AI Engineer Intern (Southampton, UK)</h3>
+          <p class="t-period">July 2025 – Present</p>
           <ul>
-            <li>Contributed to Generative AI initiatives, RAG pipelines, and deployment-ready model optimization.</li>
-            <li>Collaborated in fast-paced sprints; ideated scalable solution approaches and evaluation strategies.</li>
+            <li>Led transition from <strong>Milvus Vector DB</strong> to <strong>MongoDB Vector Search</strong>, reducing query latency by <strong>40%</strong> and boosting retrieval precision by <strong>2.3×</strong>.</li>
+            <li>Designed and deployed <strong>Agentic RAG</strong> pipelines using <strong>LangChain</strong>, <strong>LangGraph</strong>, and <strong>LangSmith</strong> to improve information retrieval and automate reasoning workflows.</li>
+            <li>Implemented a dual evaluation framework (<strong>DeepEval</strong> + custom using <strong>n8n</strong>) covering chunk relevancy/amount, context recall, RAG evaluator, and routing-agent evaluator—resulting in <strong>3× faster</strong> evaluation cycles and a <strong>2× improvement</strong> in model output quality.</li>
           </ul>
         </div>
       </div>
 
+      <!-- TrominoSoft -->
       <div class="t-item reveal delay-1">
         <div class="t-dot"></div>
         <div class="t-card">
-          <h3>AI/ML Intern — Hiron AI (London, UK)</h3>
-          <p class="t-period">Jun 2024 – Jul 2024</p>
+          <h3>TrominoSoft — AI Engineer Intern (Piscataway, NJ, USA)</h3>
+          <p class="t-period">June 2025 – September 2025</p>
           <ul>
-            <li>Designed RAG system architecture and curated datasets for semantic retrieval.</li>
-            <li>Implemented FAISS-based vector search; built LangChain-powered workflows and prompts.</li>
+            <li>Developed a pharma-compliance <strong>RAG chatbot</strong> integrated with <strong>1,200+ SOP</strong> documents using <strong>LangGraph</strong>, <strong>Microsoft Azure</strong>, and semantic vector search; engineered to trigger/manage <strong>30+ enterprise API workflows</strong> with <strong>90%+</strong> execution accuracy via automated <strong>n8n</strong> integrations—reducing manual lookup time by <strong>75%</strong>.</li>
+            <li>Created and annotated <strong>500+ call-centre transcripts</strong> to fine-tune an AI voice bot’s <strong>NLU/intent</strong> model (Hugging Face Transformers), reaching <strong>92%</strong> intent-recognition accuracy; added speaker diarization and OpenAI vector-embedding-ready metadata to lift retrieval precision by <strong>25%</strong>.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Hiron AI -->
+      <div class="t-item reveal delay-2">
+        <div class="t-dot"></div>
+        <div class="t-card">
+          <h3>Hiron AI — AI/ML Engineer Intern (London, UK)</h3>
+          <p class="t-period">June 2025 – July 2025</p>
+          <ul>
+            <li>Architected and deployed an enterprise-grade <strong>RAG</strong> system integrating <strong>FAISS</strong> vector search, <strong>Hybrid Search</strong> (BM25 + Embeddings), document chunking, and knowledge graphs—enabling precise candidate–job matching across <strong>2K+</strong> profiles with sub-second retrieval.</li>
+            <li>Developed advanced prompt-engineering strategies and fine-tuned a <strong>cross-encoder reranker</strong> for enhanced relevance scoring, achieving <strong>+22%</strong> match accuracy and <strong>1.5×</strong> reduction in retrieval latency.</li>
           </ul>
         </div>
       </div>
@@ -139,7 +181,7 @@
         </div>
       </article>
     </div>
-    <p class="hint">If you change file names or move them into folders, update these links accordingly.</p>
+    <p class="hint">If you rename/move the PDFs, update the links above.</p>
   </section>
 
   <!-- Contact -->
@@ -154,8 +196,6 @@
         <span>GitHub</span>
         <small>github.com/nithun-rajan</small>
       </a>
-      <!-- Optional: add email -->
-      <!-- <a class="c-card" href="mailto:YOUR.EMAIL@domain.com"><span>Email</span><small>YOUR.EMAIL@domain.com</small></a> -->
     </div>
   </section>
 
@@ -166,3 +206,4 @@
   <script src="assets/js/script.js"></script>
 </body>
 </html>
+
