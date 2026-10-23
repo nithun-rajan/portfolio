@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nithun Sundarrajan – AI/ML Engineer</title>
-  <meta name="description" content="Portfolio of Nithun Sundarrajan — AI/ML Engineer. Experience, projects, education, and verified documents." />
+  <title>Nithun Sundarrajan – AI/ML Engineer &amp; Researcher</title>
+  <meta name="description" content="Portfolio of Nithun Sundarrajan — AI/ML engineer and researcher, BEng Electrical &amp; Electronic Engineering, University of Southampton. Research, experience, projects and documents." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -17,16 +17,18 @@
     <div class="nav">
       <a class="brand" href="#top">Nithun Sundarrajan</a>
       <nav>
+        <a href="#research">Research</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#education">Education</a>
+        <a href="#leadership">Leadership</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
 
     <div class="hero-inner">
       <h1 class="reveal">Nithun Sundarrajan</h1>
-      <p class="subtitle reveal delay-1">AI/ML Engineer</p>
+      <p class="subtitle reveal delay-1">AI/ML Engineer &amp; Researcher · BEng Electrical &amp; Electronic Engineering, University of Southampton</p>
 
       <!-- Subtle animated shapes -->
       <div class="orbs">
@@ -37,10 +39,73 @@
     </div>
   </header>
 
+  <!-- Research -->
+  <section id="research" class="section">
+    <h2 class="section-title">Research</h2>
+    <div class="timeline">
+
+      <div class="t-item reveal">
+        <div class="t-dot"></div>
+        <div class="t-card">
+          <h3>Retrieval-Augmented Generation and LLM Reliability</h3>
+          <p class="t-period">2026 · University of Southampton · Supervisor: Dr Shoaib Jameel</p>
+          <ul>
+            <li>Ran <strong>controlled experiments on retrieval-augmented language models</strong> to examine how competing evidence affects answer reliability, combining matched-context evaluation, document-level attention analysis and statistical comparisons.</li>
+            <li>Designed <strong>attention-steering interventions</strong> to probe model failure mechanisms and separate observational associations from intervention effects.</li>
+            <li><strong>First-author manuscript submitted for review to ECIR 2027.</strong></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="t-item reveal delay-1">
+        <div class="t-dot"></div>
+        <div class="t-card">
+          <h3>Final-Year Dissertation — Machine Learning for Communications</h3>
+          <p class="t-period">2026 – Present · University of Southampton · Supervisor: Professor Lie-Liang Yang</p>
+          <ul>
+            <li>Investigating <strong>critical-information preservation in Transformer-based semantic communication</strong> systems, including <strong>DeepSC</strong>: reconstruction errors in names, numbers and identifiers that conventional text-similarity metrics can overlook.</li>
+            <li>Built controlled benchmarks that separate <strong>learned-codec errors from channel-induced errors</strong>, comparing neural and conventional source–channel coding over <strong>Rayleigh fading and AWGN</strong> channels.</li>
+            <li>Manuscript in preparation for <strong>IEEE Wireless Communications Letters</strong>.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
   <!-- Work Experience -->
   <section id="experience" class="section">
     <h2 class="section-title">Work Experience</h2>
     <div class="timeline">
+
+      <!-- KOIOS -->
+      <div class="t-item reveal">
+        <div class="t-dot"></div>
+        <div class="t-card">
+          <h3>KOIOS Master Data — AI Systems Engineer (LLMs, Agentic Systems &amp; NLP)</h3>
+          <p class="t-period">Jan 2026 – Present · Winchester, UK</p>
+          <ul>
+            <li>Recruited in my <strong>second undergraduate year</strong> to build AI capabilities for an <strong>ISO 8000-compliant</strong> industrial master-data platform, working directly with founding director Peter Eales and director Jonathan Grant (former CEO of NewVoiceMedia).</li>
+            <li>Lead the <strong>Harmonised System (HS) code classification</strong> workflow: semantic mapping between product descriptions, structured technical attributes and tariff classifications using <strong>ML, NLP and LLMs</strong>.</li>
+            <li>Build <strong>knowledge-graph and Graph-RAG</strong> systems linking product concepts, attributes and trade data, plus <strong>multi-agent workflows</strong> for version-controlled data processing.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Mytender.io -->
+      <div class="t-item reveal">
+        <div class="t-dot"></div>
+        <div class="t-card">
+          <h3>Mytender.io — AI Engineer (Southampton, UK)</h3>
+          <p class="t-period">Sep 2025 – Jan 2026 · AI Engineer Intern Jul 2025 – Sep 2025</p>
+          <ul>
+            <li>Earned a <strong>performance-based return offer</strong> to join full-time in my second year; built <strong>multi-agent architectures</strong> for tender analysis with <strong>LangChain</strong> and <strong>LangGraph</strong>, integrating tool calling, retrieval and document processing.</li>
+            <li>Improved RAG pipelines and contributed to the migration from <strong>Milvus</strong> to <strong>MongoDB Vector Search</strong>, cutting query latency by <strong>40%</strong> and raising retrieval precision <strong>2.3×</strong>.</li>
+            <li>Developed intelligent <strong>trace analysis</strong> to diagnose system behaviour, and compared LLMs and architectures to guide model selection.</li>
+            <li>As an intern, grew the custom evaluation framework into a <strong>production system with 40+ evaluators</strong> used daily by the engineering team, and built NLP and retrieval components for unstructured tender documents.</li>
+          </ul>
+        </div>
+      </div>
 
       <!-- Apicore -->
       <div class="t-item reveal">
@@ -48,10 +113,9 @@
         <div class="t-card">
           <h3>Apicore Pharmaceuticals (RK Pharma Group) — Machine Learning Research Intern</h3>
           <ul>
-            <li>Built predictive models for <strong>API process-development data</strong> (yield, assay, impurity levels), comparing <strong>regularized regression</strong>, <strong>random forests</strong> and <strong>gradient-boosted trees</strong> with <strong>grouped cross-validation</strong> to prevent data leakage; checked extrapolation and the mechanistic plausibility of key variables with chemists.</li>
-            <li>Evaluated <strong>unsupervised anomaly detection</strong> (PCA, isolation forests, one-class models, statistical process monitoring) to flag atypical impurity profiles for expert review.</li>
-            <li>Prototyped an evidence-grounded <strong>RAG</strong> document-intelligence system over SOPs and technical reports, with source attribution, document-version filtering and metadata-based access controls.</li>
-            <li>Assessed <strong>transfer learning</strong> and image-based anomaly detection for visual inspection, and delivered reproducible notebooks, benchmarks and an ML adoption roadmap.</li>
+            <li>Structured process-development data to predict <strong>reaction yield, assay and impurity levels</strong>, comparing <strong>regularised regression</strong>, <strong>random forests</strong> and <strong>gradient-boosted trees</strong> with <strong>grouped cross-validation</strong> to prevent leakage between related experiments; assessed stability and scientific plausibility with domain experts.</li>
+            <li>Evaluated <strong>unsupervised and semi-supervised anomaly detection</strong> (PCA, isolation-based algorithms, one-class models) to flag atypical impurity profiles and abnormal process conditions.</li>
+            <li>Prototyped an evidence-grounded <strong>RAG</strong> document-intelligence system over SOPs and technical reports, with source attribution, document-version filtering and access controls; delivered reproducible notebooks, benchmarks and documented limitations.</li>
           </ul>
           <blockquote class="t-quote">
             “I am a chemist by training … I therefore use the term <em>rigorous</em> carefully when evaluating technical work. Nithun’s work demonstrated genuine scientific rigor.”
@@ -60,42 +124,15 @@
         </div>
       </div>
 
-      <!-- Mytender.io -->
+      <!-- Properly CRM -->
       <div class="t-item reveal">
         <div class="t-dot"></div>
         <div class="t-card">
-          <h3>Mytender.io — AI Engineer Intern (Southampton, UK)</h3>
-          <p class="t-period">Jul 2025 – Present</p>
+          <h3>Properly CRM — Technical Co-Founder (Southampton, UK)</h3>
+          <p class="t-period">Jan 2025 – Jul 2025 · AI-driven CRM for UK estate agencies</p>
           <ul>
-            <li>Migrated vector store from <strong>Milvus</strong> to <strong>MongoDB Vector Search</strong>, cutting query latency by <strong>40%</strong> and lifting retrieval precision by <strong>2.3×</strong>.</li>
-            <li>Built <strong>Agentic RAG</strong> pipelines with <strong>LangChain</strong>, <strong>LangGraph</strong>, and <strong>LangSmith</strong> to automate reasoning workflows.</li>
-            <li>Created a dual evaluation framework (<strong>DeepEval</strong> + custom in <strong>n8n</strong>) for chunking/recall/routing—achieving <strong>3× faster</strong> eval cycles and <strong>2×</strong> quality improvement.</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- TrominoSoft -->
-      <div class="t-item reveal delay-1">
-        <div class="t-dot"></div>
-        <div class="t-card">
-          <h3>TrominoSoft — AI Engineer Intern (Piscataway, NJ, USA)</h3>
-          <p class="t-period">Jun 2025 – Sep 2025</p>
-          <ul>
-            <li>Developed pharma-compliance <strong>RAG</strong> chatbot across <strong>1,200+ SOPs</strong> using <strong>LangGraph</strong>, <strong>Azure</strong>, and semantic search; orchestrated <strong>30+ enterprise APIs</strong> with <strong>n8n</strong> at <strong>90%+</strong> success, reducing lookup time by <strong>75%</strong>.</li>
-            <li>Annotated <strong>500+</strong> call-centre transcripts to fine-tune an NLU model (HF Transformers) to <strong>92%</strong> intent accuracy; added speaker diarization and embedding-ready metadata, improving retrieval by <strong>25%</strong>.</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Hiron AI -->
-      <div class="t-item reveal delay-2">
-        <div class="t-dot"></div>
-        <div class="t-card">
-          <h3>Hiron AI — AI/ML Engineer Intern (London, UK)</h3>
-          <p class="t-period">Jun 2025 – Jul 2025</p>
-          <ul>
-            <li>Architected a production-grade <strong>RAG</strong> stack with <strong>FAISS</strong>, hybrid search (BM25 + embeddings), chunking, and knowledge graphs for precise candidate–job matching on <strong>2K+</strong> profiles with sub-second retrieval.</li>
-            <li>Fine-tuned a <strong>cross-encoder reranker</strong> and advanced prompts, yielding <strong>+22%</strong> match accuracy and <strong>1.5×</strong> lower retrieval latency.</li>
+            <li>Co-founded and led the technical build from concept to MVP, deploying <strong>AI chatbots and AI call agents</strong> to automate customer interactions and internal workflows.</li>
+            <li>Built AI evaluation packs for automated property cost estimation (sales &amp; lettings); pitched to <strong>50+ companies</strong> across Hampshire and presented to a network of <strong>500+ estate agencies</strong> in London, with 50+ firms expressing strong interest.</li>
           </ul>
         </div>
       </div>
@@ -110,10 +147,11 @@
       <!-- Ariadne -->
       <article class="card hover-lift">
         <h3>Ariadne — Vision-Guided Autonomous Rover</h3>
+        <p class="t-period">2026 · University of Southampton</p>
         <p>
-          Built the real-time computer vision pipeline for a 4-person autonomous rover that finds marker gates and steers through them:
-          <strong>adaptive-threshold</strong> marker detection, perspective rectification and <strong>rotation-invariant Hamming decoding</strong>,
-          geometric gate pairing and <strong>EMA</strong> tracking. Steering letters stream over <strong>UART</strong> to a Pico motor controller with slew limiting and a 300 ms failsafe.
+          Led a four-person team and built the rover's computer vision system: an <strong>OpenCV</strong> perception pipeline on <strong>Raspberry Pi 4</strong>
+          that turns live camera frames into steering targets. <strong>Adaptive thresholding</strong>, perspective rectification and
+          <strong>rotation-invariant Hamming decoding</strong> identify markers; geometric gate pairing with <strong>EMA</strong> tracking holds the target through motion blur and dropouts.
         </p>
         <p><em>Tech:</em> Python, OpenCV, NumPy, C++, Raspberry Pi, Raspberry Pi Pico</p>
         <a class="link" target="_blank" href="https://github.com/nithun-rajan/ariadne-rover">View on GitHub →</a>
@@ -121,14 +159,28 @@
 
       <!-- Nidaan AI -->
       <article class="card hover-lift">
-        <h3>Nidaan AI — Offline Multilingual AI Nurse (Google Gemma 3n Impact Challenge)</h3>
+        <h3>Nidaan AI — Locally Deployed Multilingual Healthcare Assistant</h3>
+        <p class="t-period">2025 · Google Gemma 3n Impact Challenge</p>
         <p>
-          Engineered a rural healthcare assistant; fine-tuned with <strong>QLoRA (int8)</strong> + <strong>Unsloth</strong> on a custom medical corpus.
-          Implemented <strong>Hybrid RAG</strong> (<strong>ChromaDB</strong> + <strong>FAISS</strong>) for reliable, context-aware responses.
-          Deployed fully offline via <strong>Ollama</strong> with Gujarati/English speech I/O for low-connectivity regions.
+          Co-developed a Gujarati–English healthcare assistant. Travelled to <strong>Indral, Gujarat</strong> to understand local access, language and connectivity barriers,
+          and built a community-specific retrieval knowledge base. Fine-tuned <strong>Gemma-3n-E2B-it</strong> with <strong>QLoRA</strong> + <strong>Unsloth</strong>, added <strong>hybrid RAG</strong>
+          and multilingual speech, then quantised to <strong>GGUF</strong> and deployed offline via <strong>Ollama</strong>. Received media coverage and CSR-expansion enquiries.
         </p>
         <p><em>Tech:</em> Python, Gemma-3n, QLoRA, Unsloth, FAISS, ChromaDB, FastAPI, STT/TTS, Ollama</p>
         <a class="link" target="_blank" href="https://github.com/nithun-rajan/Nidaan-AI">View on GitHub →</a>
+      </article>
+
+      <!-- TurbineIQ -->
+      <article class="card hover-lift">
+        <h3>TurbineIQ — Time-Series Modelling and Diagnostics</h3>
+        <p class="t-period">2025</p>
+        <p>
+          Multivariate forecasting on <strong>50,000+ wind-turbine SCADA</strong> observations with <strong>XGBoost</strong>, sliding temporal windows and sine/cosine
+          encoding for wind-direction circularity. <strong>Physics-aware anomaly detection</strong> from actual-vs-theoretical power residuals and operating-envelope
+          constraints, with interpretable performance scores. Later deployed to production with engineers at <strong>NovintiX</strong>.
+        </p>
+        <p><em>Tech:</em> Python, XGBoost, pandas, time-series analysis</p>
+        <a class="link" target="_blank" href="https://github.com/nithun-rajan/TurbineIQ-AI-Driven-SCADA-Analytics-Performance-Scoring">View on GitHub →</a>
       </article>
 
       <!-- EdgeRisk Analyzer -->
@@ -164,15 +216,16 @@
 
     <div class="grid">
       <article class="card">
-        <h3>University of Southampton — BEng Electrical & Electronic Engineering (EEE)</h3>
+        <h3>University of Southampton — BEng Electrical &amp; Electronic Engineering (EEE)</h3>
         <p class="t-period">2024 – 2027 · Southampton, UK</p>
-        <p><em>Core:</em> Digital Systems, Control, Signal Processing, Probability & Statistics, Linear Algebra, Embedded Systems, ML Fundamentals, Data Analysis & Modelling</p>
+        <p><strong>Predicted First-Class Honours.</strong></p>
+        <p><em>Relevant coursework:</em> Foundations of Machine Learning; Precision Health: Machine Learning Under Uncertainty (final-year modules); Mathematics; Engineering Mathematics; Signal Processing; Programming and Modelling Mechatronic Systems; Control and Systems Engineering; Communications.</p>
       </article>
 
       <article class="card">
         <h3>Green Valley High School — Senior Secondary (CBSE)</h3>
-        <p class="t-period">2022 – 2024 · India</p>
-        <p><em>Achievements:</em> 94% aggregate; A* in Physics, Chemistry, Mathematics; cleared JEE (among the most competitive global engineering exams).</p>
+        <p class="t-period">2022 – 2024 · Gujarat, India</p>
+        <p><em>Achievements:</em> 94% aggregate; A* in Physics, Chemistry and Mathematics. Cleared JEE (Joint Entrance Exam), taken by 1.4M candidates, placing among top performers nationwide.</p>
       </article>
     </div>
 
@@ -189,27 +242,26 @@
           <a class="btn small ghost" download href="Apicore-Recommendation-Letter.pdf">Download</a>
         </div>
       </article>
+    </div>
+  </section>
 
-      <article class="card hover-lift">
-        <h4>Certificate of Internship</h4>
-        <div class="pdf">
-          <iframe title="Certificate of Internship" src="Certificate%20of%20Internship.pdf"></iframe>
-        </div>
-        <div class="doc-actions">
-          <a class="btn small" target="_blank" href="Certificate%20of%20Internship.pdf">Open PDF</a>
-          <a class="btn small ghost" download href="Certificate%20of%20Internship.pdf">Download</a>
-        </div>
+  <!-- Certifications & Leadership -->
+  <section id="leadership" class="section">
+    <h2 class="section-title">Certifications &amp; Leadership</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>President — UoS Artificial Intelligence Society</h3>
+        <p class="t-period">2025 – Present</p>
+        <ul>
+          <li>Lead a <strong>200+ student</strong> AI society, directing projects, talks and workshops in machine learning and reinforcement learning with startup founders, industry professionals and representatives from <strong>IET, BAE Systems and Airbus</strong>.</li>
+          <li>Organised and judged <strong>SotonShip26</strong>, a 48-hour university hackathon delivered with <strong>Future Worlds, J.P. Morgan, Barclays, Deutsche Bank and IET</strong>.</li>
+        </ul>
       </article>
 
-      <article class="card hover-lift">
-        <h4>Recommendation Letter</h4>
-        <div class="pdf">
-          <iframe title="Recommendation Letter" src="Recommendation%20Letter%20Nithun%20Sundarrajan%203.pdf"></iframe>
-        </div>
-        <div class="doc-actions">
-          <a class="btn small" target="_blank" href="Recommendation%20Letter%20Nithun%20Sundarrajan%203.pdf">Open PDF</a>
-          <a class="btn small ghost" download href="Recommendation%20Letter%20Nithun%20Sundarrajan%203.pdf">Download</a>
-        </div>
+      <article class="card">
+        <h3>Microsoft Certified: Azure AI Engineer Associate</h3>
+        <p class="t-period">Dec 2025 · Microsoft</p>
+        <p>Production AI on Azure: computer vision pipelines, NLP services and knowledge mining; generative AI and agentic workflows with <strong>Azure AI Studio</strong>, <strong>Azure OpenAI Service</strong> and <strong>Document Intelligence</strong>.</p>
       </article>
     </div>
   </section>
@@ -234,10 +286,9 @@
   </section>
 
   <footer class="footer">
-    © 2025 Nithun Sundarrajan · Hosted on GitHub Pages
+    © 2026 Nithun Sundarrajan · Hosted on GitHub Pages
   </footer>
 
   <script src="assets/js/script.js"></script>
 </body>
 </html>
-
