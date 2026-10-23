@@ -42,6 +42,24 @@
     <h2 class="section-title">Work Experience</h2>
     <div class="timeline">
 
+      <!-- Apicore -->
+      <div class="t-item reveal">
+        <div class="t-dot"></div>
+        <div class="t-card">
+          <h3>Apicore Pharmaceuticals (RK Pharma Group) — Machine Learning Research Intern</h3>
+          <ul>
+            <li>Built predictive models for <strong>API process-development data</strong> (yield, assay, impurity levels), comparing <strong>regularized regression</strong>, <strong>random forests</strong> and <strong>gradient-boosted trees</strong> with <strong>grouped cross-validation</strong> to prevent data leakage; checked extrapolation and the mechanistic plausibility of key variables with chemists.</li>
+            <li>Evaluated <strong>unsupervised anomaly detection</strong> (PCA, isolation forests, one-class models, statistical process monitoring) to flag atypical impurity profiles for expert review.</li>
+            <li>Prototyped an evidence-grounded <strong>RAG</strong> document-intelligence system over SOPs and technical reports, with source attribution, document-version filtering and metadata-based access controls.</li>
+            <li>Assessed <strong>transfer learning</strong> and image-based anomaly detection for visual inspection, and delivered reproducible notebooks, benchmarks and an ML adoption roadmap.</li>
+          </ul>
+          <blockquote class="t-quote">
+            “I am a chemist by training … I therefore use the term <em>rigorous</em> carefully when evaluating technical work. Nithun’s work demonstrated genuine scientific rigor.”
+            <cite>Dr. Jayaraman Kannappan, President &amp; CEO, Apicore (<a class="link" href="#documents">letter</a>)</cite>
+          </blockquote>
+        </div>
+      </div>
+
       <!-- Mytender.io -->
       <div class="t-item reveal">
         <div class="t-dot"></div>
@@ -89,6 +107,18 @@
   <section id="projects" class="section">
     <h2 class="section-title">Projects</h2>
     <div class="grid">
+      <!-- Ariadne -->
+      <article class="card hover-lift">
+        <h3>Ariadne — Vision-Guided Autonomous Rover</h3>
+        <p>
+          Built the real-time computer vision pipeline for a 4-person autonomous rover that finds marker gates and steers through them:
+          <strong>adaptive-threshold</strong> marker detection, perspective rectification and <strong>rotation-invariant Hamming decoding</strong>,
+          geometric gate pairing and <strong>EMA</strong> tracking. Steering letters stream over <strong>UART</strong> to a Pico motor controller with slew limiting and a 300 ms failsafe.
+        </p>
+        <p><em>Tech:</em> Python, OpenCV, NumPy, C++, Raspberry Pi, Raspberry Pi Pico</p>
+        <a class="link" target="_blank" href="https://github.com/nithun-rajan/ariadne-rover">View on GitHub →</a>
+      </article>
+
       <!-- Nidaan AI -->
       <article class="card hover-lift">
         <h3>Nidaan AI — Offline Multilingual AI Nurse (Google Gemma 3n Impact Challenge)</h3>
@@ -147,8 +177,19 @@
     </div>
 
     <!-- Documents embedded here to honor section order -->
-    <h3 style="margin-top:28px">Documents</h3>
+    <h3 id="documents" style="margin-top:28px">Documents</h3>
     <div class="grid docs">
+      <article class="card hover-lift">
+        <h4>Recommendation Letter — Apicore Pharmaceuticals</h4>
+        <div class="pdf">
+          <iframe title="Recommendation Letter — Apicore Pharmaceuticals" src="Apicore-Recommendation-Letter.pdf"></iframe>
+        </div>
+        <div class="doc-actions">
+          <a class="btn small" target="_blank" href="Apicore-Recommendation-Letter.pdf">Open PDF</a>
+          <a class="btn small ghost" download href="Apicore-Recommendation-Letter.pdf">Download</a>
+        </div>
+      </article>
+
       <article class="card hover-lift">
         <h4>Certificate of Internship</h4>
         <div class="pdf">
